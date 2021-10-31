@@ -1,0 +1,82 @@
+html, body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+nav,
+header,
+main, 
+footer {
+    width: 96ch;
+    max-width: 100%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+nav .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+main > :first-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
+}
+main > :last-child {
+    flex-basis: 36ch;
+    flex-grow: 1;
+}
+footer {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+.title-section {
+    padding: 4rem 1rem;
+}
+.title-section h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    max-width: 40ch;
+    margin: 0 0 1rem;
+}
+.title-section .subtitle {
+    font-size: 1.2rem;
+}
+h3 {
+    margin: 0 0 0.5rem;
+}
+section ul {
+    list-style-type: none;
+    padding: 0.5rem 0 1rem;
+}
+section ul li {
+    list-style-type: none;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+
+section ul li a {
+    font-weight: bold;
+    color: #1e33a7;
+}
+
+section ul li a:visited {
+    font-weight: bold;
+    color: #411883;
+}
