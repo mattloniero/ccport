@@ -21,17 +21,34 @@
     </header>
     <main>
         <article>
+            <button id="showcontact">See Contact Information</button>
             <section id="contact">
-                <h2>Websites that I have worked on.</h2>
-                <p>This is a collection of websites that I have had a hand in building. Some of the were designed and created entirely by me. Others were made by a team that I either led or was a part of.</p>
                 <ul>
-                    <li><a href="https://modernvascular.com">Visit the Modern Vascular website.</a></li>
-                    <li><a href="https://sempersolaris.com">Visit the Semper Solaris website.</a></li>
-                    <li><a href="https://kevingmantheimusic.com">Visit the Kevin Manthei website.</a></li>
+                    <li>
+                        <h2>Phone Number</h2>
+                        <p><a href="tel:18059901234">(805) 990-3988</a></p>
+                        <p><small>Not a real phone number.</small></p>
+                    </li>
+                    <li>
+                        <h2>Address</h2>
+                        <address>
+                            123 Camino St.<br />
+                            Westlake Village, CA 91361
+                        </address>
+                        <p><small>Not a real address.</small></p>
+                    </li>
                 </ul>
             </section>
         </article>
     </main>
     <footer>&copy; 2021 Matt Loniero</footer>
+    <script>
+        const contactButton = document.getElementById('showcontact');
+        const contactSection = document.getElementById('contact');
+        contactButton.addEventListener('click', () => {
+            contactButton.style.display = 'none';
+            contactSection.style.display = 'block';
+        })
+    </script>
 </body>
 </html>
